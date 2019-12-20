@@ -1,0 +1,33 @@
+﻿ /* 清除浮动 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+
+
+/* 图片放大效果 */
+.hover-big{
+    /* width: 100%;
+    height: 100%; */
+    transition: all .6s;
+}
+
+.hover-big:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+

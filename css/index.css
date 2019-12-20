@@ -1,0 +1,450 @@
+.fa{
+    background-color: #F4F4F4;
+}
+.top {
+
+    height: 685px;
+    max-width: 1920px;
+    background: url(../img/01.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+.topbar {
+    height: 120px;
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+}
+
+
+/* 头部logo部分*/
+.topbar .logo {
+    width: 122px;
+    height: 120px;
+    position: absolute;
+    line-height: 120px;
+    background: url("../img/logo.png") no-repeat left center;
+}
+
+.topbar h1 {
+    line-height: 120px;
+}
+
+.topbar h1 a {
+
+    display: block;
+    text-indent: -9999px;
+
+}
+
+/* 头部链接 */
+.top-link {
+
+    float: right;
+    height: 120px;
+}
+
+.top .topbar ul li {
+    width: 120px;
+    height: 120px;
+    float: left;
+    line-height: 120px;
+    text-align: center;
+}
+
+.top-link ul a {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.a-bottom {
+    border-bottom: 1px white solid;
+}
+
+
+.top-link ul li:last-child a {
+    box-sizing: border-box;
+    border: 1px white solid;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+
+
+/* 公共盒子 */
+.container {
+    width: 1200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+}
+
+.show {
+    width: 1200px;
+    height: 788px;
+    /* position: relative; */
+}
+
+
+
+/* 图片展示部分 */
+.show>div {
+    width: 394px;
+    height: 352px;
+    float: left;
+    position: relative;
+    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+    margin: 6px 6px 0px 0px;
+
+
+}
+
+
+.show>div>img {
+    position: absolute;
+    z-index: 1;
+}
+
+.show>div>span {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 394px;
+    height: 352px;
+    color: white;
+
+}
+
+.show>div>span>h4 {
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+
+}
+
+.show>div>span>p {
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 14px;
+
+}
+
+.show>div:hover>span {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+
+/* 产品介绍部分 */
+presentation-main {
+    width: 1200px;
+    height: auto;
+}
+
+.presentation-main .presentation-left {
+    float: left;
+    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+}
+
+.presentation-main .presentation-right {
+    width: 625px;
+    float: right;
+}
+
+.presentation-main .presentation-right li {
+    text-indent: 2em;
+    width: 300px;
+    height: 115px;
+    float: left;
+    vertical-align: center;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+}
+
+.presentation-main .presentation-right li img {
+    width: 40px;
+    box-sizing: border-box;
+}
+
+.presentation-main .presentation-right li:not(:first-child) img {
+  padding-top: 14px;
+}
+
+
+.presentation-main .presentation-right li:first-child img
+{
+    padding-top: 5px;
+}
+
+
+.presentation-main .presentation-txt {
+
+    width: 200px;
+    float: right;
+}
+
+.presentation-main .presentation-txt h5 {
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    text-indent: 0;
+}
+
+.presentation-main .presentation-txt p {
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+    text-indent: 0;
+    margin-top: 5px;
+    margin-right: 24px;
+}
+
+/* 优势上部分 */
+.advantage-head {
+    margin-top: 45px;
+    position: relative;
+    width: 1200px;
+    height: auto;
+}
+
+.advantage-head>div {
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.advantage-head>div:nth-child(2n+1) {
+    margin-right: 20px;
+}
+
+
+.advantage-head>div>img {
+    position: relative;
+}
+
+.advantage-head-txt {
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    box-sizing: border-box;
+    width: 590px;
+    height: 219px;
+    padding: 120px 30px 0px 20px;
+    display: none;
+}
+
+.advantage-head>div>span>h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.advantage-head>div>span>p {
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.advantage-head>div:hover .advantage-head-txt {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+
+/* 优势下部分 */
+.advantage-fo {
+    width: 1200px;
+    height: auto;
+
+}
+
+.advantage-fo-left {
+    width: 666px;
+    height: 450px;
+    float: left;
+}
+
+.advantage-fo-left>img:nth-child(2n+1) {
+    margin-right: 16px;
+}
+
+.advantage-fo-left>img {
+    margin-bottom: 16px;
+    /* width: 315px;
+    height: 205px; */
+    /* cursor: pointer; */
+}
+
+.advantage-fo-right {
+    float: right;
+}
+
+.dianxing ul {
+    margin-left: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dianxing ul li {
+    width: 199px;
+    height: 90px;
+    float: left;
+}
+
+/* 尾部 */
+
+/* 尾部第一部分 */
+.foot {
+    max-width: 1920;
+    height: 300px;
+    background-image: url(../img/foot.png);
+}
+
+.foot_main {
+    height: 250px;
+    border-bottom: 1px solid #515151
+}
+
+.foot_main1 {
+    width: 500px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.foot_main1-up img {
+    float: left;
+    margin-left: 10px;
+}
+
+.foot_main1-up>div {
+    float: right;
+    font-size: 14px;
+    line-height: 34px;
+    color: #ababab;
+}
+
+.foot_main1-up h5 {
+    margin-right: 126px;
+    font-size: 14px;
+}
+
+/* 下部分 */
+
+.foot_main1-down {
+    padding-top: 70px;
+}
+
+.foot_main1-down li {
+    float: left;
+    color: #ababab;
+}
+
+.foot_main1-down li a {
+    color: #ababab;
+    padding: 5px;
+}
+
+
+/* 尾部第二部分 */
+
+.foot .about-us {
+    width: 200px;
+    height: 250px;
+    float: left;
+    color: #ababab;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin-left: 25px;
+}
+
+.foot .about-us a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #ababab;
+}
+
+.foot .about-us li:first-child a {
+    font-size: 18px;
+}
+
+/* 尾部第三部分 */
+.foot .relation {
+
+    width: 200px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.foot .relation a {
+    line-height: 28px;
+    color: #ababab;
+    font-size: 14px;
+}
+
+.foot .relation li:first-child a {
+
+    font-size: 18px;
+}
+
+
+/* 尾部第四部分 */
+
+.foot .weixin {
+    width: 253px;
+    height: 250px;
+    float: right;
+    color: #ababab;
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+
+.foot .weixin1 {
+    margin-right: 60px;
+}
+
+.foot .weixin1,
+.weixin2 {
+    float: left;
+}
+
+.foot .weixin1 p,
+.foot .weixin2 p {
+    line-height: 28px;
+
+}
+
+
+
+
+
+
+
+
+.foot-fo {
+    color: #cdcdcd;
+}
+
+.foot-fo a {
+    color: #cdcdcd;
+}
