@@ -1,0 +1,132 @@
+/* 头部大图部分 */
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/about-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* 大图里的文字 */
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+
+}
+
+.top-txt  h1{
+    font-size: 46px;
+   margin-bottom: 10px;
+}
+
+.top-txt  p{
+    font-size: 36px;
+}
+
+
+/* 主体父盒子 & title */
+.main {
+    height: 864px;
+}
+
+.title {
+    height: 137px;
+    line-height: 137px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* 按钮部分 */
+.title input {
+    width: 162px;
+    height: 54px;
+    border: 2px #e82828 solid;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 54px;
+    color: #e82828;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* 被选中的按钮 */
+input.selected {
+    color: white;
+    background-color: #e82828;
+    color: white;
+}
+
+.title input:first-child {
+    margin-right: 45px;
+}
+
+
+
+/* 文字部分 */
+.main .txt {
+    height: 727px;
+}
+
+
+.txt-1 {
+    height: 295px;
+}
+
+.txt-1 h2 {
+    font-size: 24px;
+    line-height: 90px;
+}
+
+.txt-1 p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+
+
+.txt-2,
+.txt-3,
+.txt-4 {
+    height: 144px;
+}
+
+.txt-2 h2,
+.txt-3 h2,
+.txt-4 h2 {
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.txt-2 p,
+.txt-3 p,
+.txt-4 p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.txtnone {
+    display: none;
+}
+#txt-teame .txt-1{
+    height: 320px;
+}
+#txt-teame .txt-2{
+    height: auto;
+}
+
+
+#txt-teame .txt-1 p{
+    line-height: 50px;
+}
+
+
+#txt-teame .txt-2 p{
+    line-height: 50px;
+}
+

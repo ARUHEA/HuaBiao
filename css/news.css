@@ -1,0 +1,159 @@
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/news-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+/* 大图文字 */
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+
+}
+
+.top-txt h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.top-txt p {
+    font-size: 36px;
+}
+
+
+.news-main {
+    height: 800px;
+}
+
+.news-main li a{
+    /* width: 1000px;
+    height: 150px; */
+    color: black;
+    background-color: #ccc;
+   
+}
+
+.news-main ul {
+    height: 800px;
+    margin-top: 30px;
+}
+
+.news-main ul li {
+    margin-top: 10px;
+    height: 150px;
+    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+}
+
+.news-main ul li:first-child {
+    margin-top: 0px;
+}
+
+.news-time {
+    float: left;
+    width: 200px;
+    line-height: 75px;
+    margin: 30px;
+    height: 80px;
+    border-right: 1px solid #d2d2d2;
+}
+
+.news-time span {
+    display: block;
+width: 160px;
+height: 45px;
+text-align: center;
+line-height: 45px;
+font-size: 14px;
+}
+
+.news-time span:first-child {
+font-size: 30px;
+}
+
+
+.news-txt {
+    float: left;
+    width: 900px;
+    margin-top: 14px;
+    /* height: 150px; */
+    
+}
+
+.news-txt h3 {
+    display: inline;
+    font-size: 20px;
+    line-height: 48px;
+
+}
+
+
+
+
+/* wenz省略 */
+
+/* 谷歌火狐支持 */
+.news-txt>div {
+    float: left;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 800px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+
+/* 兼容ie6~10 */
+.news-txt>div {
+    float: left\0;
+    overflow: hidden\0;
+    height:40px\0;
+    width: 800px\0;
+    font-size: 14px\0;
+    line-height: 20px\0;
+    margin-top: 10px\0;
+}
+
+
+.pages{
+    height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pages li{
+display: inline-block;
+font-size:14px;
+padding:5px;
+margin-right:20px
+}
+
+.pages li a{
+    color: black;
+}
+
+.pages li.select-pages{
+     background-color: #e82828; 
+     color: white;
+}
+
+li.select-pages a{
+    color: white;
+}
+
+
+.pages  li.select-pages-not{
+    display: none;
+}

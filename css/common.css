@@ -12,8 +12,6 @@
     zoom: 1
 }
 
-
-
 /* 图片放大效果 */
 .hover-big{
     /* width: 100%;
@@ -24,6 +22,220 @@
 .hover-big:hover{
     transform: scale(1.1);
 }
+
+
+/* 公共盒子 */
+.container {
+    width: 1200px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+}
+
+/* 头部共享 */
+.fa {
+    background-color: #F4F4F4;
+}
+
+.topbar {
+    height: 120px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+}
+
+
+/* 头部logo部分*/
+.topbar .logo {
+    width: 122px;
+    height: 120px;
+    position: absolute;
+    line-height: 120px;
+    background: url("../img/logo.png") no-repeat left center;
+}
+
+.topbar h1 {
+    line-height: 120px;
+}
+
+.topbar h1 a {
+
+    display: block;
+    text-indent: -9999px;
+
+}
+
+/* 头部链接 */
+.top-link {
+
+    float: right;
+    height: 120px;
+}
+
+.topbar ul li {
+    width: 120px;
+    height: 120px;
+    float: left;
+    line-height: 120px;
+    text-align: center;
+}
+
+.top-link ul a {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.a-bottom {
+    border-bottom: 1px white solid;
+}
+
+
+.top-link ul li:last-child a {
+    box-sizing: border-box;
+    border: 1px white solid;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+
+
+/* 尾部共享部分 */
+
+/* 尾部第一部分 */
+.foot {
+    max-width: 1920;
+    height: 300px;
+    background-image: url(../img/foot.png);
+}
+
+.foot_main {
+    height: 250px;
+    border-bottom: 1px solid #515151
+}
+
+.foot_main1 {
+    width: 500px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.foot_main1-up img {
+    float: left;
+    margin-left: 10px;
+}
+
+.foot_main1-up>div {
+    float: right;
+    font-size: 14px;
+    line-height: 34px;
+    color: #ababab;
+}
+
+.foot_main1-up h5 {
+    margin-right: 126px;
+    font-size: 14px;
+}
+
+/* 下部分 */
+.foot_main1-down {
+    padding-top: 70px;
+}
+
+.foot_main1-down li {
+    float: left;
+    color: #ababab;
+}
+
+.foot_main1-down li a {
+    color: #ababab;
+    padding: 5px;
+}
+
+/* 尾部第二部分 */
+.foot .about-us {
+    width: 200px;
+    height: 250px;
+    float: left;
+    color: #ababab;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin-left: 25px;
+}
+
+.foot .about-us a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #ababab;
+}
+
+.foot .about-us li:first-child a {
+    font-size: 18px;
+}
+
+/* 尾部第三部分 */
+.foot .relation {
+
+    width: 200px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.foot .relation a {
+    line-height: 28px;
+    color: #ababab;
+    font-size: 14px;
+}
+
+.foot .relation li:first-child a {
+
+    font-size: 18px;
+}
+
+/* 尾部第四部分 */
+.foot .weixin {
+    width: 253px;
+    height: 250px;
+    float: right;
+    color: #ababab;
+    box-sizing: border-box;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+.foot .weixin1 {
+    margin-right: 60px;
+}
+
+.foot .weixin1,
+.weixin2 {
+    float: left;
+}
+
+.foot .weixin1 p,
+.foot .weixin2 p {
+    line-height: 28px;
+}
+
+.foot-fo {
+    color: #cdcdcd;
+}
+
+.foot-fo a {
+    color: #cdcdcd;
+}
+
+
+
 
 
 

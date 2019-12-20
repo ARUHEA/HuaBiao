@@ -1,0 +1,64 @@
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/app-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+}
+
+.top-txt h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.top-txt p {
+    font-size: 36px;
+}
+
+.details {
+    height: 820px;
+}
+
+.app-main {
+    height: 900px;
+    margin-top: 100px;
+}
+
+.app-title {
+    height: 300px;
+
+}
+
+.app-title h2 {
+    line-height: 300px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.app-main .hx {
+    width: 70px;
+    height: 0;
+    border-bottom: 1px solid #d6170f;
+    margin: -110px auto 0 auto;
+}
+
+.app-img {
+    margin-top: 50px;
+    height: 252px;
+}
+
+.app-img img {
+    margin: 70px;
+}

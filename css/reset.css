@@ -32,9 +32,8 @@ td {
 
 body {
     background: #fff;
-    color: #333;
     font-size: 12px;
-    font-family: "Verdana", "Geneva", "sans-serif", "SimSun", "宋体", "Arial Narrow""Microsoft YaHei";
+    font-family: "Microsoft YaHei";
 }
 
 /* 图片等无边框 */

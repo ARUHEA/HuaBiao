@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   
+
+<head>
+           
+    <meta charset="utf-8">
+            <style type="text/css">
+        /*              当行文字 */
+        /* #testDIV {
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; */
+            /**不换行**/
+            /* border: 1px solid #ddd;
+        } */
+
+        /*多行文字*/
+        #testDIV {
+            border: 1px solid #ddd;
+            width: 200px;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            /**显示省略号**/
+            display: -webkit-box;
+            /** 将对象作为伸缩盒子模型显示 **/
+            -webkit-box-orient: vertical;
+            /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+            line-clamp: 4;
+            /** 显示的行数 **/
+            overflow: hidden;
+            /** 隐藏超出的内容 **/
+        }
+    </style>
+        </head>
+
+
+<body>
+
+<!--[if IE]> <div>所有的IE可识别</div> <![endif]-->
+
+    <div>
+        fkvmdfmmsdopmfgvdgvdfgvfdgbvfb
+    </div>
+             <div id="testDIV">
+                    法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师法法师
+
+        法法师法法师法法师法法师法法师法法师法法师法法师
+
+        法法师法法师法法师法法师法法师法法师法法师法法师erferfefddsfgerftgerferfefe
+
+                 </div>
+        </body>
+
+</html>
