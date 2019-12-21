@@ -1,0 +1,83 @@
+/* 头部大图部分 */
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/contact-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* 大图里的文字 */
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+
+}
+
+.top-txt h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.top-txt p {
+    font-size: 36px;
+}
+
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.main .main-1 {
+    float: left;
+    width: 520px;
+    margin-left: 37px;
+}
+
+.main .main-1 h2 {
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.main .main-1 p:nth-child(2) {
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.main .main-1 p:last-child {
+    font-size: 16px;
+    line-height: 60px;
+    color: #666666;
+}
+
+.main .main-2 {
+    float: left;
+    width: 520px;
+    margin-top: 40px;
+}
+
+.main-2 .weixin1 {
+    float: left;
+}
+
+.main-2 .weixin1 {
+    float: right;
+}
+
+.weixin-p {
+    float: right;
+    margin-left: 20px;
+    margin-top: 34px;
+}
+
+#allmap {
+    width: 1200px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

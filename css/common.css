@@ -1,4 +1,8 @@
-﻿ /* 清除浮动 */
+﻿body{
+    letter-spacing: 1px;
+}
+
+/* 清除浮动 */
 .clearfix:after {
     content: ".";
     display: block;
@@ -31,12 +35,13 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
+    padding: 0px;
 
 }
 
 /* 头部共享 */
 .fa {
-    background-color: #F4F4F4;
+    background-color: #ffffff;
 }
 
 .topbar {
@@ -175,7 +180,7 @@
     color: #ababab;
 }
 
-.foot .about-us li:first-child a {
+.foot .about-us li:first-child {
     font-size: 18px;
 }
 
@@ -196,8 +201,9 @@
     font-size: 14px;
 }
 
-.foot .relation li:first-child a {
 
+.foot .relation li:first-child{
+    color: #ababab;
     font-size: 18px;
 }
 

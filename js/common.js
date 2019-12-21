@@ -21,3 +21,4 @@ $("#btn-teame").click(
         $("#txt-about").addClass("txtnone");
     }
 )
+

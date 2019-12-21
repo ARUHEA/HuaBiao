@@ -24,7 +24,7 @@ textarea,
 p,
 blockquote,
 th,
-td { 
+td {
     padding: 0;
     margin: 0;
 }
@@ -108,3 +108,12 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
+
+/* 清除边框 */
+input[type=submit],
+input[type=reset],
+input[type=button] {
+    border: none;
+    background: none;
+    cursor: pointer;
+}

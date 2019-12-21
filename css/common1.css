@@ -1,0 +1,226 @@
+@charset "utf-8";
+body {
+	letter-spacing: 1px;
+}
+.fl{float: left;}
+.fr{float: right;}
+.cr{clear: both;}
+.imgs{display: block;max-width: 100%;height: auto;}
+.over{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.overs{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
+.animet{transition: 1s;-moz-transition: 1s;-webkit-transition: 1s;-o-transition: 1s;-ms-transition: 1s;}
+.animet1{transition: .5s;-moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;-ms-transition: .5s;}
+.width{width: 1200px;margin: 0 auto;}
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px #FFF inset !important;}
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*头部*/
+/*头部导航栏*/
+.header-wrap {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+}
+/*.nav .open>a {
+	background: #0080FF;
+}*/
+.navbar {
+	margin-bottom: 0;
+	border: none;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 16px;
+	padding: 0;
+	border-radius: 0;
+	position: relative;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.navbar-default {
+	background: transparent;
+}
+.navbar-default .navbar-nav>li>a:focus .nav-ch,
+.navbar-default .navbar-nav>li>a:hover .nav-ch {
+	transition: .01s;
+	-moz-transition: .01s;
+ 	-webkit-transition: .01s;
+	-o-transition: .01s;
+}
+.navbar-nav>li {
+	padding: .35rem .18rem;
+	/*margin: 0 .2rem;*/
+}
+.nav-pills>li+li {
+	margin-left: 0;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover, 
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	transition: .3s;
+	-moz-transition: .3s;
+ 	-webkit-transition: .3s;
+	-o-transition: .3s;
+	background: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.index-header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 555;
+	padding: .22rem 0;
+}
+@media only screen and (min-width: 1024px ) {
+	.navbar-nav {
+		float: right;
+	}
+	.nav-item>li:hover>a {
+		transition: .5s;
+		color: #fff !important;
+		display: block;
+	}
+}
+/*.ar-active {
+	color: #A6CA14 !important;
+}*/
+.ar-show {
+	width: 100% !important;
+}
+.nav-item em {
+	display: block;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	bottom: -.1rem;
+	text-align: center;
+}
+.nav-item {
+	padding-top: .1rem;
+}
+.nav-item li:hover em {
+	transition: .8s;-moz-transition: .8s;-webkit-transition: .8s;-o-transition: .8s;
+	width: 100%;
+}
+.nav-ch {
+	display: inline-block;
+	position: relative;
+}
+.xq-logo {
+	display: block;
+	padding-top: .38rem;
+}
+.header-app a {
+	display: inline-block;
+	color: #fff;
+	font-size: .16rem;
+	padding: .06rem .2rem;
+	border-radius: 20px;
+	border: 1px solid #fff;
+}
+.header-app {
+	padding-top: .35rem;
+	padding-left: .22rem;
+}
+
+
+
+
+/*底部*/
+.footer-wrap {
+	width: 100%;
+	color: #fff;
+	padding-top: .44rem;
+}
+.footer-lt {
+	width: 30%;
+}
+.footer-lt p {
+	font-size: .14rem;
+	padding-top: .2rem;
+}
+.footer-rt,
+.footer-nav {
+	width: 50%;
+}
+.footer-list li {
+	float: left;
+	width: 50%;
+}
+.footer-list li span {
+	font-size: .18rem;
+}
+.footer-two a {
+	display: block;
+	color: #fff;
+	font-size: .14rem;
+	padding-top: .18rem;
+}
+.footer-er p {
+	font-size: .14rem;
+	padding-top: .12rem;
+}
+.footer-er {
+	display: inline-block;
+}
+.footer-er:last-child {
+	padding-left: .5rem;
+}
+.footer-er img {
+	width: .95rem;
+	height: .95rem;
+}
+.footer-link {
+	font-size: .14rem;
+	padding: .24rem 0 .2rem;
+	border-bottom: 1px solid #454545;
+}
+.footer-link a {
+	font-size: .14rem;
+	color: #fff;
+	display: inline-block;
+	padding: 0 .1rem;
+}
+.footer-leo p {
+	font-size: .14rem;
+}
+.footer-leo a {
+	font-size: .14rem;
+	color: #fff;
+}
+.footer-leo {
+	padding: .2rem 0; 
+}
+
+
+
+/*分页*/
+.xq-page {
+	text-align: center;
+	font-size: 0;
+}
+.xq-page a {
+	display: inline-block;
+	padding: .1rem .12rem;
+	font-size: .14rem;
+	color: #000;
+	background: #fff;
+	margin: 0 .1rem;
+}
+.xq-page a:hover {
+	color: #fff;
+	background: #DB1007;
+}

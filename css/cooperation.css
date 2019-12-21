@@ -1,0 +1,142 @@
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/cooperation-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+}
+
+.top-txt h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.top-txt p {
+    font-size: 36px;
+}
+
+.main {
+    height: 1730px;
+    margin-top: 50px;
+
+
+}
+
+.main>div>h2 {
+    padding-left: 20px;
+    margin: 30px 0px 30px 0px;
+    line-height: 24px;
+    font-size: 24px;
+    border-left: 3px solid #e82828;
+}
+
+.main>div>p {
+    font-size: 16px;
+}
+
+.main>div {
+    margin-bottom: 80px;
+}
+
+.main-3>div>img {
+    padding: 45px 45px 0px 45px;
+}
+
+.main-4 .main-4-1 {
+    padding-bottom: 20px;
+    background-color: #e82828;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.main-4>div>h3 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+
+.main-4>div>p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    color: white;
+}
+
+.form-div{
+background-color: #f2f2f2;
+}
+.main-4 form {
+    width: 660px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.main-4 form p {
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.main-4 form p input {
+    font-size: 16px;
+    line-height: 20px;
+    width: 600px;
+    color: #999999;
+    text-indent: 1em;
+}
+
+.main-4 form p textarea {
+    resize: none;
+    width: 602px;
+}
+
+.main-4 form>p:nth-child(3) {
+    position: relative;
+    margin-top: 20px;
+}
+
+.main-4 form>p:nth-child(3) span {
+    position: absolute;
+    line-height: 24px;
+}
+
+.main-4 form>p:nth-child(3) textarea {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    margin-left: 54px;
+    text-indent: 1em;
+}
+
+.main-4 .form-btn {
+    width: 198px;
+    margin: 0 auto;
+    border: none;
+}
+
+.main-4 .form-btn input {
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #e82828;
+    color: white;
+    outline: none;
+}
+
+.main-5 p{
+    text-indent: 25px;
+}
+
+
+

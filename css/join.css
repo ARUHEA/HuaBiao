@@ -1,0 +1,85 @@
+/* 头部大图部分 */
+.top-about {
+    height: 449px;
+    max-width: 1920px;
+    background: url(../img/join-top.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* 大图里的文字 */
+.top-bigtxt {
+    position: relative;
+}
+
+.top-txt {
+
+    position: absolute;
+    top: -260px;
+    color: white;
+
+}
+
+.top-txt h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+.top-txt p {
+    font-size: 36px;
+}
+
+.main {
+    height: 900px;
+}
+
+.main-left {
+    float: left;
+    height: 800px;
+    width: 500px;
+}
+
+.main-right {
+    width: 500px;
+    height: 800px;
+    float: right;
+}
+
+.main h2 {
+    font-size: 20px;
+    line-height: 70px;
+    width: 300px;
+    float: left;
+}
+
+.main span {
+    font-size: 16px;
+    line-height: 70px;
+    color: #666666;
+    float: left;
+}
+
+.main h3 {
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.main p {
+    font-size: 16px;
+    line-height: 40px;
+    color: #666666;
+}
+
+.main input {
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    background-color: #e82828;
+    color: white;
+}
+
+
+
+.foot_main1-up h5 {
+    line-height: 2.5;
+}

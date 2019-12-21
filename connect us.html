@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href=" img/favicon.ico" />
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/connect us.css">
+
+
+    <script></script>
+</head>
+
+<body>
+
+    <div class="fa">
+        <!-- 头部链接部分共享开始-->
+        <div class="top-about">
+
+            <div class="topbar">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html" title="公司名字">公司名字</a>
+                    </h1>
+                </div>
+                <div class="top-link">
+                    <ul>
+                        <li> <a href="index.html">首页</a></li>
+                        <li> <a href="about.html">关于我们</a></li>
+                        <li> <a href="news.html">华彪新闻</a></li>
+                        <li> <a href="cooperation.html">招商加盟</a></li>
+                        <li> <a href="connect us.html" class="a-bottom">联系我们</a></li>
+                        <li> <a href="join.html">加入我们</a></li>
+                        <li><a href="app.html">下载app</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 头部链接部分共享结束 -->
+
+        <div class="container top-bigtxt">
+            <div class="top-txt">
+                <h1>联系我们</h1>
+                <p>Contact&nbsp;us</p>
+            </div>
+        </div>
+
+        <div class="container main clearfix">
+            <div class="main-1">
+                <h2>江西华彪电动科技有限公司</h2>
+                <p>服务热线：400-9155969</p>
+                <p>地址：江西省德兴市新能源电动车产业园</p>
+            </div>
+
+            <div class="main-2 clearfix">
+                <div class="weixin1">
+                    <img src="img/weixin1.png" alt="">
+                    <div class="weixin-p">
+                        <p>扫码关注</p>
+                        <p> 微信公众号</p>
+                    </div>
+
+
+                </div>
+                <div class="weixin2"> <img src="img/weixin2.png" alt="">
+                    <div class="weixin-p">
+                        <p>扫码关注</p>
+                        <p> 微信小程序</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="allmap"></div>
+
+
+
+        <!-- 尾部共享开始 -->
+        <div class="foot clearfix">
+            <div class="container foot_main">
+
+                <div class="foot_main1">
+                    <div class="foot_main1-up clearfix">
+                        <img src="img/logo.png" alt="">
+                        <div>
+                            <h5>江西华彪电动科技有限公司</h5>
+                            <h5>联系电话：400-9155969</h5>
+                            <h5>地址：江西省德兴市新能源电动车产业园</h5>
+                        </div>
+                    </div>
+
+                    <ul class="foot_main1-down clearfix">
+                        <li> 友情链接：</li>
+                        <li> <a href="https://www.baidu.com/" target="_blank"> 百度 </a></li>
+                        <li> <a href="https://www.google.cn/" target="_blank"> google </a></li>
+                        <li> <a href="#"> 壹玖课程费用 </a></li>
+                        <li> <a href="#"> coco奶茶 </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="about-us">
+                    <ul class="clearfix">
+                        <li>关于我们</li>
+                        <li><a href="about.html">关于华彪</a></li>
+                        <li><a href="about-2.html">创始团队</a></li>
+                        <li><a href="news.html">华彪新闻</a></li>
+                    </ul>
+
+
+                </div>
+                <div class=" relation">
+
+                    <ul>
+                        <li>加入我们</li>
+                        <li><a href="join.html">社会招聘</a></li>
+                        <li><a href="connect us.html">联系我们</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="weixin clearfix">
+                    <div class="weixin1">
+                        <img src="img/weixin1.png" alt="">
+                        <p>扫码关注</p>
+                        <p> 微信公众号</p>
+
+                    </div>
+                    <div class="weixin2"> <img src="img/weixin2.png" alt="">
+                        <p>扫码关注</p>
+                        <p> 微信小程序</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container foot-fo">
+                ICP备案号 赣ICP备19020289号-4 技术支持：
+                <a href="http://www.gewangcn.com/" target="_blank">格网科技</a>
+            </div>
+        </div>
+        <!-- 尾部共享结束 -->
+    </div>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=YkmMB4rrkhpVWUy9mupbPAwwehBVBhHn">
+    </script>
+
+    <script>
+        // 百度地图API功能
+        var map = new BMap.Map("allmap"); // 创建Map实例
+        var point = new BMap.Point(117.627635, 28.93064);
+        map.centerAndZoom(point, 18);
+        var marker = new BMap.Marker(point); // 创建标注
+        map.addOverlay(marker); // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+        map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    </script>
+</body>
+
+</html>

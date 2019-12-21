@@ -31,17 +31,17 @@
 }
 
 .app-main {
-    height: 900px;
-    margin-top: 100px;
+    height: 550px;
+    /* margin-top: 100px; */
 }
 
 .app-title {
-    height: 300px;
+    height: 120px;
 
 }
 
 .app-title h2 {
-    line-height: 300px;
+    line-height: 120px;
     text-align: center;
     font-size: 32px;
     letter-spacing: 3px;
@@ -51,7 +51,7 @@
     width: 70px;
     height: 0;
     border-bottom: 1px solid #d6170f;
-    margin: -110px auto 0 auto;
+    margin: -20px auto 0 auto;
 }
 
 .app-img {
