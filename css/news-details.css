@@ -1,3 +1,4 @@
+/* 头部大图 */
 .top-about {
     height: 449px;
     max-width: 1920px;
@@ -6,6 +7,7 @@
     margin: 0 auto;
 }
 
+/* 头部图片内文字 */
 .top-bigtxt {
     position: relative;
 }
@@ -26,6 +28,7 @@
     font-size: 36px;
 }
 
+/* 主体部分 */
 .details{
     height: 820px;
 }
@@ -64,6 +67,7 @@ border-bottom: 1px #dcdcdc solid;
 
     margin-top: 50px;
 }
+
 .details  .details-pages a{
 color: black;
 font-size: 16px;

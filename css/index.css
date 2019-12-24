@@ -3,6 +3,7 @@
 
     height: 685px;
     max-width: 1920px;
+    min-width: 1200px;
     background: url(../img/index-top.png) no-repeat center;
     background-size: cover;
     margin: 0 auto;
@@ -21,7 +22,7 @@
     height: 352px;
     float: left;
     position: relative;
-    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+    box-shadow: 0 0 6px 2px rgb(230, 228, 228);
     margin: 6px 6px 0px 0px;
     background-color: #F4F4F4;
 }
@@ -44,6 +45,7 @@
     text-align: center;
     line-height: 60px;
     font-size: 30px;
+    font-weight: 700;
 }
 
 .show>div>span>p {
@@ -52,9 +54,12 @@
     font-size: 14px;
 }
 
-.show>div:hover>span {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
+@media (min-width: 541px) {
+
+    .show>div:hover>span {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+    }
 }
 
 
@@ -66,7 +71,7 @@ presentation-main {
 
 .presentation-main .presentation-left {
     float: left;
-    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+    box-shadow: 0 0 6px 2px rgb(230, 228, 228);
 }
 
 .presentation-main .presentation-right {
@@ -85,7 +90,7 @@ presentation-main {
     margin-right: 10px;
     box-sizing: border-box;
     padding-top: 20px;
-    box-shadow: 5px 5px 7px rgb(230, 228, 228);
+    box-shadow: 0 0 6px 2px rgb(230, 228, 228);
 }
 
 .presentation-main .presentation-right li img {
@@ -111,13 +116,14 @@ presentation-main {
 
 .presentation-main .presentation-txt h5 {
     color: black;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     text-indent: 0;
 }
 
 .presentation-main .presentation-txt p {
-    color: black;
+    color: #333;
     font-size: 14px;
     line-height: 20px;
     text-indent: 0;
@@ -143,7 +149,6 @@ presentation-main {
     margin-right: 20px;
 }
 
-
 .advantage-head>div>img {
     position: relative;
 }
@@ -166,18 +171,19 @@ presentation-main {
     margin-bottom: 10px;
 }
 
-
 .advantage-head>div>span>p {
     font-size: 14px;
     line-height: 20px;
     color: white;
 }
 
-.advantage-head>div:hover .advantage-head-txt {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
-}
 
+@media screen and (min-width: 541px) {
+    .advantage-head>div:hover .advantage-head-txt {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+    }
+}
 
 /* 优势下部分 */
 .advantage-fo {
@@ -200,8 +206,10 @@ presentation-main {
     margin-bottom: 16px;
 }
 
-.advantage-fo-right {
+.advantage-fo-right video {
     float: right;
+    width: 500px;
+    height: 400px;
 }
 
 .dianxing ul {
@@ -214,4 +222,409 @@ presentation-main {
     width: 199px;
     height: 90px;
     float: left;
+}
+
+/* 图片更改 */
+@media screen and (min-width: 541px) {
+    .pc-none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .phone-none {
+        display: none;
+    }
+}
+
+
+/* 手机适配 */
+
+/*当屏幕尺寸小于768px时，应用下面的CSS样式*/
+@media screen and (max-width: 540px) {
+
+    /* 共用头部 */
+
+    /* 菜单 */
+    .menu {
+        display: block;
+        position: fixed;
+        right:.32rem;
+        top: .08rem;
+        width: .666667rem;
+        height: .666667rem;
+        background: rgba(230, 200, 104, 0.1) url(../img/menu.png);
+        z-index: 999;
+    }
+
+    .header_about {
+        width: 5rem;
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0px;
+        display: none;
+    }
+
+    .header_about ul {
+        z-index: 99;
+        position: absolute;
+    }
+
+    .header_about ul li {
+        z-index: 99;
+        width: 10rem;
+        height: 0.8rem;
+        border-bottom: 1px white solid;
+    }
+
+    .header_about a {
+        position: absolute;
+        display: inline-block;
+        width: 10rem;
+        height: 0.8rem;
+        background-image: none;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        z-index: 99;
+        text-align: center;
+        line-height: 1rem;
+        font-size: 16px;
+        
+    }
+
+    #t-none {
+        width: 10rem;
+        height: 20rem;
+        position: fixed;
+        top: 6.5rem;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 9999;
+    }
+
+    .top-index {
+        height:3.84rem;
+        max-width: 10rem;
+        min-width: 10rem;
+        background-size: 10rem 3.84rem;
+    }
+
+
+    .topbar {
+        width: 10rem;
+        height: 1rem;
+    }
+
+    .topbar .logo {
+        margin: .133333rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-size: contain;
+    }
+
+    .topbar ul {
+        display: none
+    }
+
+
+
+    /* index开始 */
+    .show>div>img {
+
+        width: 4rem;
+        height: 3.68rem
+    }
+
+    .show {
+        width: 10rem;
+        height: 32.426667rem;
+    }
+
+    .show>div {
+        width: 4rem;
+        height: 12rem;
+        margin: 0.3rem .66rem .66rem .66rem;
+    }
+
+    .show>div:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .show>div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .show>div:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    .show>div>span {
+        position: absolute;
+        top: 3.0rem;
+        z-index: 2;
+        display: block;
+        width: 4rem;
+        height: 5.98rem;
+        color: rgb(15, 15, 15);
+    }
+
+    .show>div>span>h4 {
+        font-size: .374rem;
+        line-height: .853333rem;
+        color: black;
+    }
+
+    .show>div>span>p {
+        font-size: .32rem;
+        text-indent: 0em;
+        line-height: .45rem;
+        padding-top: .133333rem;
+        padding-left: .266667rem;
+        padding-right: .133333rem;
+    }
+
+    .presentation {
+        position: relative;
+    }
+
+    img.pc-none {
+        width: 8.7rem;
+        height: 3.2rem;
+        margin-left: 0.65rem;
+    }
+
+
+    .presentation-main .presentation-left {
+        margin-left: .66rem
+    }
+
+    .presentation-left>img {
+
+        width: 8.6rem;
+        height: 7.52rem;
+        /* margin-left: 0.75rem; */
+    }
+
+    .presentation-main .presentation-right {
+        width: 10rem;
+    }
+
+    .presentation-main .presentation-right li {
+        width: 8.586667rem;
+        height: 2.666667rem;
+        box-sizing: border-box;
+        margin-left: .666rem;
+    }
+
+    .presentation-main .presentation-txt {
+        width: 6.5rem;
+    }
+
+    .presentation-main .presentation-right li img {
+        height: 1.493333rem
+    }
+
+    .presentation-main .presentation-txt h5 {
+        font-size: .426667rem
+    }
+
+    .presentation-main .presentation-txt p {
+        font-size: .32rem
+    }
+
+    .advantage-head {
+        width: 10rem;
+    }
+
+    .advantage-head>div>img {
+        width: 8.586rem;
+        height: 3.706667rem;
+        margin-bottom: 4rem;
+    }
+
+    .advantage-head-txt {
+        top: .533333rem;
+        left: 0px;
+        box-sizing: border-box;
+        width: 8.586rem;
+        height: 5.333333rem;
+        display: block;
+        padding: 3.2rem .8rem 0rem .533333rem;
+    }
+
+    .advantage-head>div>span>h4 {
+        margin-top: .266667rem;
+        color: black;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .advantage-head>div>span>p {
+        padding-left: .133333rem;
+        text-indent: 2em;
+        color: #333;
+    }
+
+    .advantage-fo {
+        width: 10rem;
+        height: auto;
+    }
+
+    .advantage-fo-left {
+        width: 10rem;
+        height: 6.666667rem;
+        float: left;
+    }
+
+    .advantage-fo-left>img {
+        width: 4.266667rem;
+        height: 2.773333rem;
+        margin-bottom: 0rem;
+    }
+
+    .advantage-fo-left>img:nth-child(2n+1) {
+        margin-right: .426667rem;
+    }
+
+    .advantage-fo-left>img:nth-child(2n+1) {
+        margin-left: .666667rem
+    }
+
+    .advantage-fo-left>img:nth-child(2n+1) {
+        margin-right: 0px;
+    }
+
+    .advantage-fo-right {
+        width: 9.9rem;
+        height: 7rem;
+    }
+
+    .advantage-head>div {
+        box-shadow: 0 0 6px 2px rgb(230, 228, 228);
+        width: 8.586rem;
+        margin-left: 0.707rem;
+        height: 9rem;
+        margin-bottom: .533333rem;
+    }
+
+    .advantage-fo-right video {
+        float: left;
+        width: 8.7rem;
+        height: 7rem;
+        margin-left: .65rem
+    }
+
+    .dianxing {
+        width: 10rem;
+    }
+
+    .dianxing ul {
+        margin-left: .64rem;
+        margin-bottom: .8rem
+    }
+
+    .dianxing ul li {
+        width: 3.013333rem;
+        height: 1.333333rem;
+    }
+
+    .dianxing li img {
+        width: 2.666667rem;
+        height: 1.066667rem;
+    }
+
+
+    /* 共用尾部 */
+    .foot {
+        background: none;
+        width: 10rem;
+        background-color: #282828;
+        height: 13rem;
+        padding-top: .266667rem;
+        padding-bottom: .266667rem;
+    }
+
+    .foot_main {
+        border-bottom: none;
+        height: 6.666667rem
+    }
+
+    .foot_main1 {
+        padding-top: 0px;
+        width: 10rem;
+        height: 1.92rem;
+
+    }
+
+    .foot_main1-down {
+        margin-top: 8.5rem;
+        width: 10rem;
+        padding-top: 0.5rem;
+
+    }
+
+    .foot_main1-down li:nth-child(1) {
+        text-indent: 2em;
+    }
+
+    .foot .foot_main1-up {
+        width: 10rem;
+    }
+
+    .foot_main1-up img {
+        margin-top: .266667rem;
+        width: 1.013333rem;
+        height: 1.28rem;
+    }
+
+    .foot_main1-up h5 {
+        margin-right: .906667rem;
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .about-us {
+        width: 3.466667rem;
+        margin-bottom: -2.666667rem;
+        height: 6.666667rem;
+        margin-left: 1.866667rem;
+        padding-top: .2rem;
+    }
+
+    .foot .about-us li:first-child {
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .relation li:first-child {
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .relation {
+        width: 4.5rem;
+        height: 4rem;
+        padding-top: .133333rem;
+    }
+
+    .foot .about-us a {
+        font-size: .32rem;
+    }
+
+    .foot .relation a {
+        font-size: .32rem;
+    }
+
+    .foot .weixin {
+        width: 8.533333rem;
+        height: 4.266667rem;
+        padding-top: 0px;
+    }
+
+    .foot-fo {
+        color: #cdcdcd;
+        font-size: .32rem;
+        margin-top: 5rem;
+        text-indent: 2em;
+    }
 }
