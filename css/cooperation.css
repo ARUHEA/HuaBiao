@@ -73,9 +73,10 @@
     color: white;
 }
 
-.form-div{
-background-color: #f2f2f2;
+.form-div {
+    background-color: #f2f2f2;
 }
+
 .main-4 form {
     width: 660px;
     margin: 0 auto;
@@ -134,9 +135,279 @@ background-color: #f2f2f2;
     outline: none;
 }
 
-.main-5 p{
+.main-5 p {
     text-indent: 25px;
 }
 
+@media screen and (max-width: 540px) {
+
+    /* 共用头部 开始 */
+    /* 菜单 */
+    .menu {
+        display: block;
+        position: fixed;
+        right: .32rem;
+        top: .08rem;
+        width: .666667rem;
+        height: .666667rem;
+        background: rgba(230, 200, 104, 0.1) url(../img/menu.png);
+        z-index: 999999;
+    }
+
+    .ph-menulist {
+        width: 5rem;
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0px;
+        display: none;
+    }
+
+    .ph-menulist ul {
+        z-index: 99;
+        position: absolute;
+    }
+
+    .ph-menulist ul li {
+        z-index: 99;
+        width: 10rem;
+        height: 0.8rem;
+        border-bottom: 1px white solid;
+    }
+
+    .ph-menulist a {
+        position: absolute;
+        display: inline-block;
+        width: 10rem;
+        height: 0.8rem;
+        background-image: none;
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+        z-index: 99;
+        text-align: center;
+        line-height: 1rem;
+        font-size: .426667rem;
+    }
+
+    #t-none {
+        width: 10rem;
+        height: 20rem;
+        position: fixed;
+        top: 6.5rem;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 9999;
+        display: none;
+    }
+
+    .top-about {
+        height: 3.84rem;
+        max-width: 10rem;
+        min-width: 10rem;
+        background-size: 16.426667rem 3.84rem;
+        background-position: -4.8rem 0rem;
+    }
+
+    .topbar {
+        width: 10rem;
+        height: 1rem;
+    }
+
+    .topbar .logo {
+        margin: .133333rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-size: contain;
+    }
+
+    .topbar ul {
+        display: none
+    }
+
+    /* 图片内文字 */
+    .top-txt {
+        position: absolute;
+        top: -2.4rem;
+        color: white;
+        margin-left: .266667rem;
+    }
+
+    .top-txt p {
+        font-size: .533333rem;
+    }
+
+    .top-txt h1 {
+        font-size: .8rem;
+        margin-bottom: 0rem;
+    }
+
+    /* 头部共享结束 */
 
 
+
+    .main>div {
+        margin-bottom: .4rem;
+        box-sizing: border-box;
+        padding: .133333rem;
+    }
+
+    .main>div>p {
+        font-size: .373333rem;
+        box-sizing: border-box;
+        padding: .266667rem;
+        text-indent: 2em;
+    }
+
+    .main>div>h2 {
+        margin-left: .133333rem;
+        box-sizing: border-box;
+        padding-left: .533333rem;
+        margin: 0px 0px 0px 0px;
+        line-height: .64rem;
+        font-size: .533333rem;
+        border-left: .08rem solid #e82828;
+    }
+
+    .coop-none {
+        display: none;
+    }
+
+    .main-4 .main-4-1 {
+        width: auto;
+        padding-bottom: .533333rem;
+        background-color: #e82828;
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .main-4 form {
+        width: auto;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+    }
+
+    .main-4 form p input {
+        font-size: .426667rem;
+        line-height: .533333rem;
+        width: 8rem;
+        color: #999999;
+        text-indent: 1em;
+    }
+
+    .main-4 form p textarea {
+        resize: none;
+        width: 8rem;
+    }
+
+    .main-4>div>h3 {
+        font-size: .64rem;
+    }
+
+    .main-4>div>p {
+        font-size: .426667rem;
+        text-align: center;
+        line-height: .426667rem;
+        color: white;
+    }
+
+    .main {
+        height: auto;
+        margin-top: 1.333333rem;
+        margin-bottom: .533333rem;
+    }
+
+    /* 共用尾部 */
+    .foot {
+        background: none;
+        width: 10rem;
+        background-color: #282828;
+        height: 13rem;
+        padding-top: .266667rem;
+        padding-bottom: .266667rem;
+    }
+
+    .foot_main {
+        border-bottom: none;
+        height: 6.666667rem
+    }
+
+    .foot_main1 {
+        padding-top: 0rem;
+        width: 10rem;
+        height: 1.92rem;
+
+    }
+
+    .foot_main1-down {
+        margin-top: 8.5rem;
+        width: 10rem;
+        padding-top: 0.5rem;
+
+    }
+
+    .foot_main1-down li:nth-child(1) {
+        text-indent: 2em;
+    }
+
+    .foot .foot_main1-up {
+        width: 10rem;
+    }
+
+    .foot_main1-up img {
+        margin-top: .266667rem;
+        width: 1.013333rem;
+        height: 1.28rem;
+    }
+
+    .foot_main1-up h5 {
+        margin-right: .906667rem;
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .about-us {
+        width: 3.466667rem;
+        margin-bottom: -2.666667rem;
+        height: 6.666667rem;
+        margin-left: 1.866667rem;
+        padding-top: .2rem;
+    }
+
+    .foot .about-us li:first-child {
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .relation li:first-child {
+        font-size: .373333rem;
+        line-height: .586667rem;
+    }
+
+    .foot .relation {
+        width: 4.5rem;
+        height: 4rem;
+        padding-top: .133333rem;
+    }
+
+    .foot .about-us a {
+        font-size: .32rem;
+    }
+
+    .foot .relation a {
+        font-size: .32rem;
+    }
+
+    .foot .weixin {
+        width: 8.533333rem;
+        height: 4.266667rem;
+        padding-top: 0rem;
+    }
+
+    .foot-fo {
+        color: #cdcdcd;
+        font-size: .32rem;
+        margin-top: 5rem;
+        text-indent: 2em;
+    }
+    .foot-fo  span{
+        padding-left: .62rem
+      }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href=" img/favicon.ico" />
+    <title>华彪新闻</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="css/news.css"> -->
+    <link rel="stylesheet" href="css/flexible.css">
+    <style>
+        @media screen and (max-width: 540px) {
+
+            /* 共用头部 开始 */
+            /* 菜单 */
+            .menu {
+                display: block;
+                position: fixed;
+                right: 12px;
+                top: 3px;
+                width: 25px;
+                height: 25px;
+                background: rgba(230, 200, 104, 0.1) url(../img/menu.png);
+                z-index: 999999;
+            }
+
+            .ph-menulist {
+                width: 5rem;
+                height: 100%;
+                position: fixed;
+                z-index: 99;
+                top: 0px;
+                display: none;
+            }
+
+            .ph-menulist ul {
+                z-index: 99;
+                position: absolute;
+            }
+
+            .ph-menulist ul li {
+                z-index: 99;
+                width: 10rem;
+                height: 0.8rem;
+                border-bottom: 1px white solid;
+            }
+
+            .ph-menulist a {
+                position: absolute;
+                display: inline-block;
+                width: 10rem;
+                height: 0.8rem;
+                background-image: none;
+                background: rgba(0, 0, 0, 0.4);
+                color: white;
+                z-index: 99;
+                text-align: center;
+                line-height: 1rem;
+                font-size: 16px;
+            }
+
+            #t-none {
+                width: 10rem;
+                height: 20rem;
+                position: fixed;
+                top: 6.5rem;
+                background-color: rgba(0, 0, 0, 0);
+                z-index: 9999;
+                display: none;
+            }
+
+            .top-news {
+                height: 144px;
+                max-width: 10rem;
+                min-width: 10rem;
+                background-size: 616px 144px;
+                background-position: -180px 0px;
+            }
+
+            .topbar {
+                width: 10rem;
+                height: 1rem;
+            }
+
+            .topbar .logo {
+                margin: .133333rem;
+                width: 1.2rem;
+                height: 1.2rem;
+                background-size: contain;
+            }
+
+            .topbar ul {
+                display: none
+            }
+
+            /* 图片内文字 */
+            .top-txt {
+                position: absolute;
+                top: -2.4rem;
+                color: white;
+                margin-left: .266667rem;
+            }
+
+            .top-txt p {
+                font-size: 20px;
+            }
+
+            .top-txt h1 {
+                font-size: 30px;
+                margin-bottom: 0rem;
+            }
+
+            /* 头部共享结束 */
+
+
+
+
+            /* 共用尾部 */
+            .foot {
+                background: none;
+                width: 10rem;
+                background-color: #282828;
+                height: 13rem;
+                padding-top: .266667rem;
+                padding-bottom: .266667rem;
+            }
+
+            .foot_main {
+                border-bottom: none;
+                height: 6.666667rem
+            }
+
+            .foot_main1 {
+                padding-top: 0px;
+                width: 10rem;
+                height: 1.92rem;
+
+            }
+
+            .foot_main1-down {
+                margin-top: 8.5rem;
+                width: 10rem;
+                padding-top: 0.5rem;
+
+            }
+
+            .foot_main1-down li:nth-child(1) {
+                text-indent: 2em;
+            }
+
+            .foot .foot_main1-up {
+                width: 10rem;
+            }
+
+            .foot_main1-up img {
+                margin-top: .266667rem;
+                width: 1.013333rem;
+                height: 1.28rem;
+            }
+
+            .foot_main1-up h5 {
+                margin-right: .906667rem;
+                font-size: .373333rem;
+                line-height: .586667rem;
+            }
+
+            .foot .about-us {
+                width: 3.466667rem;
+                margin-bottom: -2.666667rem;
+                height: 6.666667rem;
+                margin-left: 1.866667rem;
+                padding-top: .2rem;
+            }
+
+            .foot .about-us li:first-child {
+                font-size: .373333rem;
+                line-height: .586667rem;
+            }
+
+            .foot .relation li:first-child {
+                font-size: .373333rem;
+                line-height: .586667rem;
+            }
+
+            .foot .relation {
+                width: 4.5rem;
+                height: 4rem;
+                padding-top: .133333rem;
+            }
+
+            .foot .about-us a {
+                font-size: .32rem;
+            }
+
+            .foot .relation a {
+                font-size: .32rem;
+            }
+
+            .foot .weixin {
+                width: 8.533333rem;
+                height: 4.266667rem;
+                padding-top: 0px;
+            }
+
+            .foot-fo {
+                color: #cdcdcd;
+                font-size: 12px;
+                margin-top: 5rem;
+                text-indent: 2em;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="fa">
+
+
+
+        <!-- 头部链接部分共享开始-->
+        <div class="top-news">
+
+            <div class="topbar">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html" title="公司名字">公司名字</a>
+                    </h1>
+                </div>
+                <div class="top-link">
+                    <ul>
+                        <li> <a href="index.html">首页</a></li>
+                        <li> <a href="about.html">关于我们</a></li>
+                        <li> <a href="news.html" class="a-bottom">华彪新闻</a></li>
+                        <li> <a href="cooperation.html">招商加盟</a></li>
+                        <li> <a href="connect us.html">联系我们</a></li>
+                        <li> <a href="join.html">加入我们</a></li>
+                        <li><a href="app.html">下载app</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+
+        </div>
+
+        <div class="ph-menulist">
+
+            <ul>
+                <li> <a href="index.html">首页</a></li>
+                <li> <a href="about.html">关于我们</a></li>
+                <li> <a href="news.html">华彪新闻</a></li>
+                <li> <a href="cooperation.html">招商加盟</a></li>
+                <li> <a href="connect us.html">联系我们</a></li>
+                <li> <a href="join.html">加入我们</a></li>
+                <li> <a href="app.html">下载app</a></li>
+            </ul>
+
+        </div>
+        <div id="t-none"> </div>
+        <!-- 头部链接部分共享结束 -->
+
+
+        <!-- 大图文字 -->
+        <div class="container top-bigtxt">
+            <div class="top-txt">
+                <h1>华彪新闻</h1>
+                <p>HuaBiao&nbsp;&nbsp;news</p>
+            </div>
+
+
+
+
+
+
+
+            <!-- 尾部共享开始 -->
+            <div class="foot clearfix">
+
+                <div class="container foot_main">
+
+                    <div class="foot_main1">
+                        <div class="foot_main1-up clearfix">
+                            <img src="img/logo.png" alt="">
+                            <div>
+                                <h5>江西华彪电动科技有限公司</h5>
+                                <h5>联系电话：400-9155969</h5>
+                                <h5>地址：江西省德兴市新能源电动车产业园</h5>
+                            </div>
+
+
+                        </div>
+
+                        <ul class="foot_main1-down clearfix">
+                            <li> 友情链接：</li>
+                            <li> <a href="https://www.baidu.com/" target="_blank"> 百度 </a></li>
+                            <li> <a href="https://www.google.cn/" target="_blank"> google </a></li>
+                            <li> <a href="#"> 壹玖课程费用 </a></li>
+                            <li> <a href="#"> coco奶茶 </a></li>
+                        </ul>
+
+
+                    </div>
+
+
+                    <div class="about-us">
+                        <ul class="clearfix">
+                            <li>关于我们</li>
+                            <li><a href="about.html">关于华彪</a></li>
+                            <li><a href="about-2.html">创始团队</a></li>
+                            <li><a href="news.html">华彪新闻</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class=" relation">
+
+                        <ul>
+                            <li>加入我们</li>
+                            <li><a href="join.html">社会招聘</a></li>
+                            <li><a href="connect us.html">联系我们</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="weixin clearfix">
+                        <div class="weixin1">
+                            <img src="img/weixin1.png" alt="">
+                            <p>扫码关注</p>
+                            <p> 微信公众号</p>
+
+                        </div>
+                        <div class="weixin2"> <img src="img/weixin2.png" alt="">
+                            <p>扫码关注</p>
+                            <p> 微信小程序</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container foot-fo">
+                    ICP备案号 赣ICP备19020289号-4 技术支持：
+                    <a href="http://www.gewangcn.com/" target="_blank">格网科技</a>
+                </div>
+            </div>
+            <!-- 尾部共享结束 -->
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/flexible.js"></script>
+        <script src="js/phone.js"></script>
+</body>
+
+</html>

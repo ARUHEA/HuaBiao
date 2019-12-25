@@ -12,8 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/swiper4.min.css">
     <link rel="stylesheet" type="text/css" href="css/common1.css">
     <link rel="stylesheet" type="text/css" href="css/main1.css">
-    <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/flexible.css">
 </head>
 
 <body>
@@ -42,6 +43,25 @@
                 </div>
             </div>
         </div>
+        <div class="menu" id="menu">
+
+        </div>
+
+        <div class="ph-menulist">
+
+            <ul>
+                <li> <a href="index.html">首页</a></li>
+                <li> <a href="about.html">关于我们</a></li>
+                <li> <a href="news.html">华彪新闻</a></li>
+                <li> <a href="cooperation.html">招商加盟</a></li>
+                <li> <a href="connect us.html">联系我们</a></li>
+                <li> <a href="join.html">加入我们</a></li>
+                <li> <a href="app.html">下载app</a></li>
+            </ul>
+
+        </div>
+        <div id="t-none"> </div>
+
         <!-- 头部链接部分共享结束 -->
 
         <!-- 大图文字 -->
@@ -470,87 +490,89 @@
                 </div>
 
                 <div class="container foot-fo">
-                    ICP备案号 赣ICP备19020289号-4 技术支持：
+                    ICP备案号 赣ICP备19020289号-4 
+                    <br>
+                    <span>技术支持：</span>
                     <a href="http://www.gewangcn.com/" target="_blank">格网科技</a>
                 </div>
             </div>
-        </div>
+            <!-- 尾部共享结束 -->
 
-        <!-- 尾部共享结束 -->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/swiper4.min.js"></script>
+            <script src="js/animate.js"></script>
+            <script src="js/flexible.js"></script>
+            <script src="js/phone.js"></script>
+            <!-- <script src="js/common1.js"></script> -->
+            <script>
+                $(function () {
+                    //招聘信息
+                    $('.joinus-up').click(function () {
+                        $('.joinus-down').slideUp(500);
+                        $('.joinus-up img').removeClass('job-animet');
+                        if ($(this).next().css('display') == 'none') {
+                            $(this).next('.joinus-down').slideDown(500);
+                            $(this).find('img').addClass('job-animet');
+                        } else {
+                            $(this).next('.joinus-down').slideUp(500);
+                        }
+                    });
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/swiper4.min.js"></script>
-        <script src="js/animate.js"></script>
-        <!-- <script src="js/common1.js"></script> -->
-        <script>
-            $(function () {
-                //招聘信息
-                $('.joinus-up').click(function () {
-                    $('.joinus-down').slideUp(500);
-                    $('.joinus-up img').removeClass('job-animet');
-                    if ($(this).next().css('display') == 'none') {
-                        $(this).next('.joinus-down').slideDown(500);
-                        $(this).find('img').addClass('job-animet');
-                    } else {
-                        $(this).next('.joinus-down').slideUp(500);
-                    }
-                });
 
+                    $('.job-btn').click(function () {
+                        let name = $('.job-name input[name=name]').val(),
+                            sex = $('.job-name input[name=sex]').val(),
+                            age = $('.job-name input[name=age]').val(),
+                            degree = $('.job-name input[name=degree]').val(),
+                            phone = $('.job-name input[name=phone]').val(),
+                            edu = $('.job-name textarea[name=edu]').val(),
+                            class_id = $('.class_id').val(),
+                            job = $('.job-name textarea[name=job]').val();
+                        let reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
 
-                $('.job-btn').click(function () {
-                    let name = $('.job-name input[name=name]').val(),
-                        sex = $('.job-name input[name=sex]').val(),
-                        age = $('.job-name input[name=age]').val(),
-                        degree = $('.job-name input[name=degree]').val(),
-                        phone = $('.job-name input[name=phone]').val(),
-                        edu = $('.job-name textarea[name=edu]').val(),
-                        class_id = $('.class_id').val(),
-                        job = $('.job-name textarea[name=job]').val();
-                    let reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
+                        if (name == "") {
+                            alert('请输入姓名!');
+                        } else if (sex == '') {
+                            alert('请输入性别!');
+                        } else if (age == '') {
+                            alert('请输入年龄!');
+                        } else if (degree == '') {
+                            alert('请输入学历!');
+                        } else if (phone == '') {
+                            alert('请输入电话号码!');
+                        } else if (!(reg.test(phone))) {
+                            alert('请输入正确的电话号码!');
+                        } else if (edu == "") {
+                            alert('请输入教育经历!');
+                        } else if (job == "") {
+                            alert('请输入工作经历!');
+                        } else {
+                            $.ajax({
+                                type: "post",
+                                url: "/index/joinus/index.html",
+                                async: true,
+                                data: {
+                                    'name': name,
+                                    'sex': sex,
+                                    'age': age,
+                                    'degree': degree,
+                                    'phone': phone,
+                                    'edu': edu,
+                                    'job': job,
+                                    'class_id': class_id
+                                },
+                                success: function (data) {
+                                    alert('提交成功');
+                                    window.location.reload();
+                                }
+                            });
+                        }
+                    })
 
-                    if (name == "") {
-                        alert('请输入姓名!');
-                    } else if (sex == '') {
-                        alert('请输入性别!');
-                    } else if (age == '') {
-                        alert('请输入年龄!');
-                    } else if (degree == '') {
-                        alert('请输入学历!');
-                    } else if (phone == '') {
-                        alert('请输入电话号码!');
-                    } else if (!(reg.test(phone))) {
-                        alert('请输入正确的电话号码!');
-                    } else if (edu == "") {
-                        alert('请输入教育经历!');
-                    } else if (job == "") {
-                        alert('请输入工作经历!');
-                    } else {
-                        $.ajax({
-                            type: "post",
-                            url: "/index/joinus/index.html",
-                            async: true,
-                            data: {
-                                'name': name,
-                                'sex': sex,
-                                'age': age,
-                                'degree': degree,
-                                'phone': phone,
-                                'edu': edu,
-                                'job': job,
-                                'class_id': class_id
-                            },
-                            success: function (data) {
-                                alert('提交成功');
-                                window.location.reload();
-                            }
-                        });
-                    }
                 })
-
-            })
-        </script>
-    </div>
+            </script>
+        </div>
 </body>
 
 </html>

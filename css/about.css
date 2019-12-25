@@ -139,15 +139,15 @@ input.selected {
     .menu {
         display: block;
         position: fixed;
-        right: 12px;
-        top: 3px;
-        width: 25px;
-        height: 25px;
+        right: .32rem;
+        top: .08rem;
+        width: .666667rem;
+        height: .666667rem;
         background: rgba(230, 200, 104, 0.1) url(../img/menu.png);
         z-index: 999999;
     }
 
-    .header_about {
+    .ph-menulist{
         width: 5rem;
         height: 100%;
         position: fixed;
@@ -156,19 +156,19 @@ input.selected {
         display: none;
     }
 
-    .header_about ul {
+    .ph-menulistul {
         z-index: 99;
         position: absolute;
     }
 
-    .header_about ul li {
+    .ph-menulist ul li {
         z-index: 99;
         width: 10rem;
         height: 0.8rem;
         border-bottom: 1px white solid;
     }
 
-    .header_about a {
+    .ph-menulist a {
         position: absolute;
         display: inline-block;
         width: 10rem;
@@ -179,7 +179,7 @@ input.selected {
         z-index: 99;
         text-align: center;
         line-height: 1rem;
-        font-size: 16px;
+        font-size: .426667rem;
     }
 
     #t-none {
@@ -223,11 +223,11 @@ input.selected {
     }
 
     .top-txt p {
-        font-size:20px;
+        font-size:.533333rem;
     }
 
     .top-txt h1 {
-        font-size: 30px;
+        font-size: .8rem;
         margin-bottom: 0rem;
     }
 
@@ -237,7 +237,12 @@ input.selected {
 
 
     .main {
-        height: 1134px;
+        height: auto;
+        margin-bottom: .266667rem;
+    }
+
+    .main .txt {
+        height: auto;
     }
 
     .title {
@@ -247,7 +252,7 @@ input.selected {
     }
 
     .title input {
-        margin-left: 16px;
+        margin-left: .426667rem;
         width: 4rem;
         height: 1.44rem;
         border-radius: .08rem;
@@ -259,12 +264,12 @@ input.selected {
     }
 
     .title input:first-child {
-        margin-right: 15px;
+        margin-right: .4rem;
     }
 
     .txt-1 h2 {
         font-size: .64rem;
-        line-height: 67px;
+        line-height: 1.786667rem;
         font-weight: 700;
     }
 
@@ -273,34 +278,34 @@ input.selected {
     .txt-3 h2,
     .txt-4 h2 {
         font-size: .64rem;
-        line-height: 67px;
+        line-height: 1.786667rem;
         font-weight: 700;
     }
 
     .txt-1 p {
         font-size: .426667rem;
-        line-height: 34px;
+        line-height: .906667rem;
     }
 
     .txt-1 {
         width: 9rem;
-        height: 530px;
+        height: 14.133333rem;
         box-sizing: border-box;
-        padding: 10px;
+        padding: .266667rem;
         box-shadow: 0 0 6px 2px rgb(230, 228, 228);
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: .266667rem;
     }
 
     #txt-teame .txt-1 {
-        margin-top: 40px;
-        height: 350px;
-        margin-bottom: 40px;
+        margin-top: 1.066667rem;
+        height: 9.333333rem;
+        margin-bottom: 1.066667rem;
 
     }
 
     #txt-teame .txt-1 p {
-        line-height: 34px;
+        line-height: .8rem
     }
 
     .txt-2,
@@ -308,28 +313,29 @@ input.selected {
     .txt-4 {
         box-shadow: 0 0 6px 2px rgb(230, 228, 228);
         box-sizing: border-box;
-        padding: 10px;
+        padding: .266667rem;
         width: 9rem;
         margin: 0 auto;
-        margin-top: 10px;
-        height: 170px;
+        margin-top: .266667rem;
+        height: 4.533333rem
     }
 
     .txt-2,
     .txt-3{
-        height: 115px;
+        height: 3.066667rem
 
 
     }
 
+    .txt-2 p, .txt-3 p, .txt-4 p {
+        font-size: .426667rem;
+        line-height: 1.066667rem;
+        line-height: .64rem;
+    }
 
-
-
-
-
-
-
-
+    #txt-teame .txt-2 p {
+        line-height: .8rem
+    }
     /* 共用尾部 */
     .foot {
         background: none;
@@ -346,7 +352,7 @@ input.selected {
     }
 
     .foot_main1 {
-        padding-top: 0px;
+        padding-top: 0rem;
         width: 10rem;
         height: 1.92rem;
 
@@ -414,15 +420,18 @@ input.selected {
     .foot .weixin {
         width: 8.533333rem;
         height: 4.266667rem;
-        padding-top: 0px;
+        padding-top: 0rem;
     }
 
     .foot-fo {
         color: #cdcdcd;
-        font-size: 12px;
+        font-size: .32rem;
         margin-top: 5rem;
         text-indent: 2em;
     }
+    .foot-fo  span{
+        padding-left: .62rem
+      }
 
 
 }

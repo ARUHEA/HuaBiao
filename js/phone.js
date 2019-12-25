@@ -1,16 +1,16 @@
 
-$(".header_about").hide();
+$(".ph-menulist").hide();
 $("#menu").click(function () {
     $("#t-none").show();
     if ($("#menu").next("div").is(":hidden")) {
-        $(".header_about").show();
+        $(".ph-menulist").show();
     } else {
-        $(".header_about").hide();
+        $(".ph-menulist").hide();
     }
 })
 
 $('#t-none').on('touchstart',function(){
-    $(".header_about").hide();
+    $(".ph-menulist").hide();
     $("#t-none").hide();
 })
 

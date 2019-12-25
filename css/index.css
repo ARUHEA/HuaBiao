@@ -257,7 +257,7 @@ presentation-main {
         z-index: 999;
     }
 
-    .header_about {
+    .ph-menulist {
         width: 5rem;
         height: 100%;
         position: fixed;
@@ -266,19 +266,19 @@ presentation-main {
         display: none;
     }
 
-    .header_about ul {
+    .ph-menulist ul {
         z-index: 99;
         position: absolute;
     }
 
-    .header_about ul li {
+    .ph-menulist ul li {
         z-index: 99;
         width: 10rem;
         height: 0.8rem;
         border-bottom: 1px white solid;
     }
 
-    .header_about a {
+    .ph-menulist a {
         position: absolute;
         display: inline-block;
         width: 10rem;
@@ -444,7 +444,7 @@ presentation-main {
 
     .advantage-head-txt {
         top: .533333rem;
-        left: 0px;
+        left: 0rem;
         box-sizing: border-box;
         width: 8.586rem;
         height: 5.333333rem;
@@ -491,7 +491,7 @@ presentation-main {
     }
 
     .advantage-fo-left>img:nth-child(2n+1) {
-        margin-right: 0px;
+        margin-right: 0rem;
     }
 
     .advantage-fo-right {
@@ -550,7 +550,7 @@ presentation-main {
     }
 
     .foot_main1 {
-        padding-top: 0px;
+        padding-top: 0rem;
         width: 10rem;
         height: 1.92rem;
 
@@ -618,7 +618,7 @@ presentation-main {
     .foot .weixin {
         width: 8.533333rem;
         height: 4.266667rem;
-        padding-top: 0px;
+        padding-top: 0rem;
     }
 
     .foot-fo {
@@ -627,4 +627,8 @@ presentation-main {
         margin-top: 5rem;
         text-indent: 2em;
     }
+
+    .foot-fo  span{
+        padding-left: .62rem
+      }
 }
