@@ -248,103 +248,108 @@
        font-size: .32rem;
     }
 
-    .foot-fo  span{
+    /* .foot-fo  span{
       padding-left: .62rem
-    }
+    } */
 
     
+   /* 共用尾部 */
+   .foot {
+    background: none;
+    width: 10rem;
+    background-color: #282828;
+    height: 13rem;
+    padding-top: .266667rem;
+    padding-bottom: .266667rem;
+}
 
-    /* 共用尾部 */
-    .foot {
-        background: none;
-        width: 10rem;
-        background-color: #282828;
-        height: 13rem;
-        padding-top: .266667rem;
-        padding-bottom: .266667rem;
-    }
+.foot_main {
+    border-bottom: none;
+    height: 6.666667rem
+}
 
-    .foot_main {
-        border-bottom: none;
-        height: 6.666667rem
-    }
+.foot_main1 {
+    padding-top: 0rem;
+    width: 10rem;
+    height: 1.92rem;
 
-    .foot_main1 {
-        padding-top: 0rem;
-        width: 10rem;
-        height: 1.92rem;
+}
 
-    }
+.foot_main1-down {
+    margin-top: 8.9rem;
+    width: 10rem;
+    padding-top: 0.5rem;
 
-    .foot_main1-down {
-        margin-top: 8.5rem;
-        width: 10rem;
-        padding-top: 0.5rem;
+}
 
-    }
+.foot_main1-down li:nth-child(1) {
+    /* text-indent: 2em; */
+    margin-left: .63rem;
+}
 
-    .foot_main1-down li:nth-child(1) {
-        text-indent: 2em;
-    }
+.foot .foot_main1-up {
+    width: 10rem;
+}
 
-    .foot .foot_main1-up {
-        width: 10rem;
-    }
+.foot_main1-up img {
+    margin-top: .266667rem;
+    width: 1.013333rem;
+    height: 1.28rem;
+}
 
-    .foot_main1-up img {
-        margin-top: .266667rem;
-        width: 1.013333rem;
-        height: 1.28rem;
-    }
+.foot_main1-up h5 {
+    margin-right: .906667rem;
+    font-size: .373333rem;
+    line-height: .586667rem;
+}
 
-    .foot_main1-up h5 {
-        margin-right: .906667rem;
-        font-size: .373333rem;
-        line-height: .586667rem;
-    }
+.foot .about-us {
+    width: 3.466667rem;
+    margin-bottom: -2.666667rem;
+    height: 6.666667rem;
+    margin-left: 1.866667rem;
+    padding-top: .2rem;
+}
 
-    .foot .about-us {
-        width: 3.466667rem;
-        margin-bottom: -2.666667rem;
-        height: 6.666667rem;
-        margin-left: 1.866667rem;
-        padding-top: .2rem;
-    }
+.foot .about-us li:first-child {
+    font-size: .373333rem;
+    line-height: .586667rem;
+}
 
-    .foot .about-us li:first-child {
-        font-size: .373333rem;
-        line-height: .586667rem;
-    }
+.foot .relation li:first-child {
+    font-size: .373333rem;
+    line-height: .586667rem;
+}
 
-    .foot .relation li:first-child {
-        font-size: .373333rem;
-        line-height: .586667rem;
-    }
+.foot .relation {
+    width: 4.5rem;
+    height: 4rem;
+    padding-top: .133333rem;
+}
 
-    .foot .relation {
-        width: 4.5rem;
-        height: 4rem;
-        padding-top: .133333rem;
-    }
+.foot .about-us a {
+    font-size: .32rem;
+}
 
-    .foot .about-us a {
-        font-size: .32rem;
-    }
+.foot .relation a {
+    font-size: .32rem;
+}
 
-    .foot .relation a {
-        font-size: .32rem;
-    }
+.foot .weixin {
+    width: 8.533333rem;
+    height: 4.266667rem;
+    padding-top: 0rem;
+}
 
-    .foot .weixin {
-        width: 8.533333rem;
-        height: 4.266667rem;
-        padding-top: 0rem;
-    }
+.foot-fo {
+    color: #cdcdcd;
+    font-size: .32rem;
+    margin-top: 5rem;
+    text-indent: 2em;
+}
 
-    .foot-fo {
-        color: #cdcdcd;
-        font-size: .32rem;
-        margin-top: 5rem;
-        text-indent: 2em;
-    }
+.foot-fo  span{
+    /* padding-left: .62rem; */
+    display: block;
+  }
 }

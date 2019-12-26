@@ -1,12 +1,25 @@
+@charset "utf-8";
 /* 头部大图片 */
-.top-index {
 
+.swiper-container {
+    width: 1920px;
     height: 685px;
-    max-width: 1920px;
-    min-width: 1200px;
-    background: url(../img/index-top.png) no-repeat center;
-    background-size: cover;
-    margin: 0 auto;
+
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: 1920px;
+}
+
+.topbar {
+    height: 120px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 685px;
+    z-index: 2;
 }
 
 /* 展示部分 */
@@ -35,7 +48,7 @@
 .show>div>span {
     position: absolute;
     z-index: 2;
-    display: none;
+    /* display: none; */
     width: 394px;
     height: 352px;
     color: white;
@@ -56,9 +69,21 @@
 
 @media (min-width: 541px) {
 
-    .show>div:hover>span {
+    .show>div>span {
         background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 2;
+        width: 394px;
+        height: 352px;
+        color: white;
+        opacity: 0;
+    }
+
+    .show>div:hover>span {
+        opacity: 1;
+        transition: .8s;
         display: block;
+
     }
 }
 
@@ -84,13 +109,18 @@ presentation-main {
     width: 300px;
     height: 115px;
     float: left;
-    vertical-align: center;
     background-color: #f4f4f4;
     margin-top: 10px;
     margin-right: 10px;
     box-sizing: border-box;
     padding-top: 20px;
     box-shadow: 0 0 6px 2px rgb(230, 228, 228);
+}
+
+@media (min-width: 541px) {
+    .presentation-main .presentation-right li:hover {
+
+    }
 }
 
 .presentation-main .presentation-right li img {
@@ -179,11 +209,19 @@ presentation-main {
 
 
 @media screen and (min-width: 541px) {
-    .advantage-head>div:hover .advantage-head-txt {
+    .advantage-head>div .advantage-head-txt {
         background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
         display: block;
+
+    }
+
+    .advantage-head>div:hover .advantage-head-txt {
+        opacity: 1;
+        transition: .8s;
     }
 }
+
 
 /* 优势下部分 */
 .advantage-fo {
@@ -229,6 +267,14 @@ presentation-main {
     .pc-none {
         display: none;
     }
+
+    .foot-fo span {
+        padding-left: 5px;
+    }
+
+    .foot_main1-down li {
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -240,8 +286,17 @@ presentation-main {
 
 /* 手机适配 */
 
-/*当屏幕尺寸小于768px时，应用下面的CSS样式*/
+/*当屏幕尺寸小于540px时，应用下面的CSS样式*/
 @media screen and (max-width: 540px) {
+    .swiper-container {
+        width: 10rem;
+        height: 3.466667rem
+    }
+
+    .swiper-slide {
+        background-repeat: no-repeat;
+        background-size: 10rem;
+    }
 
     /* 共用头部 */
 
@@ -249,11 +304,12 @@ presentation-main {
     .menu {
         display: block;
         position: fixed;
-        right:.32rem;
+        right: .32rem;
         top: .08rem;
         width: .666667rem;
         height: .666667rem;
-        background: rgba(230, 200, 104, 0.1) url(../img/menu.png);
+        background: url(../img/menu.png);
+        background-size: contain;
         z-index: 999;
     }
 
@@ -274,23 +330,25 @@ presentation-main {
     .ph-menulist ul li {
         z-index: 99;
         width: 10rem;
-        height: 0.8rem;
-        border-bottom: 1px white solid;
+        height: 0.9rem;
+        /* border-bottom: 1px white solid; */
+        /* transition: height 2s; */
     }
 
     .ph-menulist a {
         position: absolute;
         display: inline-block;
         width: 10rem;
-        height: 0.8rem;
+        height: 0.9rem;
         background-image: none;
         background: rgba(0, 0, 0, 0.4);
         color: white;
         z-index: 99;
         text-align: center;
         line-height: 1rem;
-        font-size: 16px;
-        
+        font-size: .426667rem;
+        margin-bottom: .133333rem;
+
     }
 
     #t-none {
@@ -303,7 +361,7 @@ presentation-main {
     }
 
     .top-index {
-        height:3.84rem;
+        height: 3.84rem;
         max-width: 10rem;
         min-width: 10rem;
         background-size: 10rem 3.84rem;
@@ -557,14 +615,15 @@ presentation-main {
     }
 
     .foot_main1-down {
-        margin-top: 8.5rem;
+        margin-top: 8.9rem;
         width: 10rem;
         padding-top: 0.5rem;
 
     }
 
     .foot_main1-down li:nth-child(1) {
-        text-indent: 2em;
+        /* text-indent: 2em; */
+        margin-left: .63rem;
     }
 
     .foot .foot_main1-up {
@@ -628,7 +687,8 @@ presentation-main {
         text-indent: 2em;
     }
 
-    .foot-fo  span{
-        padding-left: .62rem
-      }
+    .foot-fo span {
+        /* padding-left: .62rem; */
+        display: block;
+    }
 }

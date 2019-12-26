@@ -1,3 +1,10 @@
+@media screen and (min-width: 541px) {
+    html {
+        max-width: 1920px;
+        min-width: 1920px;
+    }
+}
+
 /* 头部大图部分 */
 .top-about {
     height: 449px;
@@ -87,6 +94,7 @@
 .foot {
     margin: 0 auto;
 }
+
 
 @media screen and (max-width: 540px) {
 
@@ -191,6 +199,11 @@
 
     /* 头部共享结束 */
 
+
+
+
+
+
     .width {
         width: 10rem;
         margin: 0 auto;
@@ -207,12 +220,57 @@
         line-height: .5rem;
     }
 
+
+
+    .joinus-up strong {
+        font-size: .32rem;
+        font-weight: bold;
+    }
+
+    .job-name textarea {
+        font-size: .32rem;
+        color: #666;
+        width: 9rem;
+        height: 4rem;
+        padding: .266667rem;
+        border: 1px solid #dcdcdc;
+    }
+
+    .joinus-up {
+        box-sizing: border-box;
+        padding: .3rem;
+        background: #fff;
+    }
+
+    .down-btn {
+        padding-top: .28rem;
+        width: 9rem;
+        text-align: center;
+    }
+
+    .job-name label {
+    
+        font-size: .346667rem;
+
+    }
+
+    .job-name input {
+        font-size: .373333rem;
+        color: #666;
+        padding-left: .266667rem;
+        height:.8rem;
+        border: 1px solid #dcdcdc;
+        width: 9rem;
+    }
+
+   
+
     /* 共用尾部 */
     .foot {
         background: none;
         width: 10rem;
         background-color: #282828;
-        height: 14rem;
+        height: 13.6rem;
         padding-top: .266667rem;
         padding-bottom: .266667rem;
     }
@@ -230,14 +288,15 @@
     }
 
     .foot_main1-down {
-        margin-top: 8.5rem;
+        margin-top: 8.9rem;
         width: 10rem;
         padding-top: 0.5rem;
 
     }
 
     .foot_main1-down li:nth-child(1) {
-       margin-left: .666667rem;
+        /* text-indent: 2em; */
+        margin-left: .63rem;
     }
 
     .foot .foot_main1-up {
@@ -300,8 +359,12 @@
         margin-top: 5rem;
         /* text-indent: 2em; */
         box-sizing: border-box;
-        padding-left: .666667rem
+        padding-left: .693333rem
     }
 
-    
-} 
+    .foot-fo  span{
+        /* padding-left: .62rem; */
+        display: block;
+      }
+
+}

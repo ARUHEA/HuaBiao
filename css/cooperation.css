@@ -84,8 +84,9 @@
 }
 
 .main-4 form p {
-    font-size: 18px;
-    line-height: 45px;
+    font-size: 16px;
+    line-height: 41px;
+    font-weight: 700;
 }
 
 .main-4 form p input {
@@ -115,7 +116,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #999999;
-    margin-left: 54px;
+    /* margin-top: 35px; */
+    margin-left: 50px;
     text-indent: 1em;
 }
 
@@ -314,8 +316,8 @@
         margin-bottom: .533333rem;
     }
 
-    /* 共用尾部 */
-    .foot {
+       /* 共用尾部 */
+       .foot {
         background: none;
         width: 10rem;
         background-color: #282828;
@@ -337,14 +339,15 @@
     }
 
     .foot_main1-down {
-        margin-top: 8.5rem;
+        margin-top: 8.9rem;
         width: 10rem;
         padding-top: 0.5rem;
 
     }
 
     .foot_main1-down li:nth-child(1) {
-        text-indent: 2em;
+        /* text-indent: 2em; */
+        margin-left: .63rem;
     }
 
     .foot .foot_main1-up {
@@ -407,7 +410,9 @@
         margin-top: 5rem;
         text-indent: 2em;
     }
+
     .foot-fo  span{
-        padding-left: .62rem
+        /* padding-left: .62rem; */
+        display: block;
       }
 }

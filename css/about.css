@@ -1,7 +1,9 @@
+
 /* 头部大图部分 */
 .top-about {
     height: 449px;
     max-width: 1920px;
+    /* min-width: 1920px; */
     background: url(../img/about-top.png) no-repeat center;
     background-size: cover;
     margin: 0 auto;
@@ -336,6 +338,8 @@ input.selected {
     #txt-teame .txt-2 p {
         line-height: .8rem
     }
+   
+
     /* 共用尾部 */
     .foot {
         background: none;
@@ -359,14 +363,15 @@ input.selected {
     }
 
     .foot_main1-down {
-        margin-top: 8.5rem;
+        margin-top: 8.9rem;
         width: 10rem;
         padding-top: 0.5rem;
 
     }
 
     .foot_main1-down li:nth-child(1) {
-        text-indent: 2em;
+        /* text-indent: 2em; */
+        margin-left: .63rem;
     }
 
     .foot .foot_main1-up {
@@ -429,9 +434,9 @@ input.selected {
         margin-top: 5rem;
         text-indent: 2em;
     }
+
     .foot-fo  span{
-        padding-left: .62rem
+        /* padding-left: .62rem; */
+        display: block;
       }
-
-
 }

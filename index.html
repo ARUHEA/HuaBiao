@@ -11,18 +11,32 @@
     <link rel="stylesheet" href="css/flexible.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <!-- <link rel="stylesheet" href="css/common.css"> -->
-
-
-
+    <link rel="stylesheet" href="css/swiper4.min.css">
 
 </head>
 
 <body>
 
     <div class="fa">
+
+
         <!-- 头部链接部分共享开始-->
         <div class="top-index">
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(img/index-top.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/index-top.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/index-top.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/index-top.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(img/index-top.png)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+            </div>
+
             <div class="topbar">
                 <div class="logo">
                     <h1>
@@ -444,10 +458,8 @@
             </div>
 
             <div class="container foot-fo">
-                ICP备案号 赣ICP备19020289号-4 
-                <br>
-                <span>技术支持：</span>
-                <a href="http://www.gewangcn.com/" target="_blank">格网科技</a>
+                ICP备案号 赣ICP备19020289号-4
+                <span>技术支持<a href="http://www.gewangcn.com/" target="_blank">：格网科技</a></span>
             </div>
         </div>
         <!-- 尾部共享结束 -->
@@ -460,6 +472,18 @@
     <script src="js/common.js"></script>
     <!-- <script src="js/rem.js"></script> -->
     <script src="js/flexible.js"></script>
+    <script src="js/swiper4.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

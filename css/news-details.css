@@ -229,8 +229,8 @@
     }
 
 
-    /* 共用尾部 */
-    .foot {
+       /* 共用尾部 */
+       .foot {
         background: none;
         width: 10rem;
         background-color: #282828;
@@ -245,21 +245,22 @@
     }
 
     .foot_main1 {
-        padding-top: 0px;
+        padding-top: 0rem;
         width: 10rem;
         height: 1.92rem;
 
     }
 
     .foot_main1-down {
-        margin-top: 8.5rem;
+        margin-top: 8.9rem;
         width: 10rem;
         padding-top: 0.5rem;
 
     }
 
     .foot_main1-down li:nth-child(1) {
-        text-indent: 2em;
+        /* text-indent: 2em; */
+        margin-left: .63rem;
     }
 
     .foot .foot_main1-up {
@@ -323,8 +324,9 @@
         text-indent: 2em;
     }
 
-    .foot-fo span {
-        padding-left: .62rem
-    }
+    .foot-fo  span{
+        /* padding-left: .62rem; */
+        display: block;
+      }
 
 }

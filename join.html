@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/flexible.css">
 </head>
 
+
 <body>
     <div class="index-container">
 
@@ -109,7 +110,7 @@
                                 <p>1. 熟悉node开发，能够开发node web, node cli, node desktop等类型的应用</p>
 
                                 <p>2. 熟悉linux及操作系统概念</p>
-                                <form action="" method="post" class="job-form" onsubmit="return "><input type="hidden"
+                                <form action="" method="post" class="job-form " onsubmit="return "><input type="hidden"
                                         class="class_id" name="class_id" value="1">
                                     <div class="job-name"><label for=""><span>*</span>姓名:</label><input type="text"
                                             name="name"></div>
@@ -489,26 +490,38 @@
                     </div>
                 </div>
 
-                <div class="container foot-fo">
-                    ICP备案号 赣ICP备19020289号-4 
-                    <br>
-                    <span>技术支持：</span>
-                    <a href="http://www.gewangcn.com/" target="_blank">格网科技</a>
+                <div class="container foot-fo clearfix">
+                    ICP备案号 赣ICP备19020289号-4
+                    <span>技术支持<a href="http://www.gewangcn.com/" target="_blank">：格网科技</a></span>
                 </div>
             </div>
             <!-- 尾部共享结束 -->
+        </div>
 
-            <script src="js/jquery-3.3.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/swiper4.min.js"></script>
-            <script src="js/animate.js"></script>
-            <script src="js/flexible.js"></script>
-            <script src="js/phone.js"></script>
-            <!-- <script src="js/common1.js"></script> -->
-            <script>
-                $(function () {
-                    //招聘信息
-                    $('.joinus-up').click(function () {
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/swiper4.min.js"></script>
+        <script src="js/animate.js"></script>
+        <script src="js/flexible.js"></script>
+        <script src="js/phone.js"></script>
+        <!-- <script src="js/common1.js"></script> -->
+        <script>
+            $(function () {
+
+                //    点击列表展示招聘信息和form
+                $('.joinus-up').click(
+
+                    function () {
+                        // 点击li时给指定button加上index类名
+                        var btn = $(this).nextAll().children("form").children("div.down-btn");
+                        if (btn.attr("class") == "down-btn") {
+                            btn.addClass("index");
+                        } else {
+                            btn.removeClass("index");
+                        }
+
+
+                        // 展示隐藏form表单
                         $('.joinus-down').slideUp(500);
                         $('.joinus-up img').removeClass('job-animet');
                         if ($(this).next().css('display') == 'none') {
@@ -517,62 +530,83 @@
                         } else {
                             $(this).next('.joinus-down').slideUp(500);
                         }
-                    });
 
 
-                    $('.job-btn').click(function () {
-                        let name = $('.job-name input[name=name]').val(),
-                            sex = $('.job-name input[name=sex]').val(),
-                            age = $('.job-name input[name=age]').val(),
-                            degree = $('.job-name input[name=degree]').val(),
-                            phone = $('.job-name input[name=phone]').val(),
-                            edu = $('.job-name textarea[name=edu]').val(),
-                            class_id = $('.class_id').val(),
-                            job = $('.job-name textarea[name=job]').val();
-                        let reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
+                        $('.index').click(function () {
 
-                        if (name == "") {
-                            alert('请输入姓名!');
-                        } else if (sex == '') {
-                            alert('请输入性别!');
-                        } else if (age == '') {
-                            alert('请输入年龄!');
-                        } else if (degree == '') {
-                            alert('请输入学历!');
-                        } else if (phone == '') {
-                            alert('请输入电话号码!');
-                        } else if (!(reg.test(phone))) {
-                            alert('请输入正确的电话号码!');
-                        } else if (edu == "") {
-                            alert('请输入教育经历!');
-                        } else if (job == "") {
-                            alert('请输入工作经历!');
-                        } else {
-                            $.ajax({
-                                type: "post",
-                                url: "/index/joinus/index.html",
-                                async: true,
-                                data: {
-                                    'name': name,
-                                    'sex': sex,
-                                    'age': age,
-                                    'degree': degree,
-                                    'phone': phone,
-                                    'edu': edu,
-                                    'job': job,
-                                    'class_id': class_id
-                                },
-                                success: function (data) {
-                                    alert('提交成功');
-                                    window.location.reload();
-                                }
-                            });
-                        }
-                    })
+                            //    移除index，防止指定错误
+                            $(this).removeClass("index");
 
-                })
-            </script>
-        </div>
+                            //      获取指定index类名的button，并找到他的兄弟
+                            // 元素（$(this).parent().children(":nth-child(n)")）
+
+
+                            let name = $(this).parent().children(":nth-child(2)").children(
+                                    "input").val(),
+                                sex = $(this).parent().children(":nth-child(3)").children(
+                                    "input").val(),
+                                age = $(this).parent().children(":nth-child(4)").children(
+                                    "input").val(),
+                                degree = $(this).parent().children(":nth-child(5)").children(
+                                    "input").val(),
+                                phone = $(this).parent().children(":nth-child(6)").children(
+                                    "input").val(),
+                                edu = $(this).parent().children(":nth-child(7)").children(
+                                    "textarea").val(),
+                                job = $(this).parent().children(":nth-child(8)").children(
+                                    "textarea").val(),
+                                class_id = $(this).parent().children(":nth-child(1)").val();
+
+                            let reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
+
+                            // 对取到的值进行判断
+                            if (name == "") {
+                                alert('请输入姓名!');
+                            } else if (sex == '') {
+                                alert('请输入性别!');
+                            } else if (age == '') {
+                                alert('请输入年龄!');
+                            } else if (degree == '') {
+                                alert('请输入学历!');
+                            } else if (phone == '') {
+                                alert('请输入电话号码!');
+                            } else if (!(reg.test(phone))) {
+                                alert('请输入正确的电话号码!');
+                            } else if (edu == "") {
+                                alert('请输入教育经历!');
+                            } else if (job == "") {
+                                alert('请输入工作经历!');
+                            } else {
+                                $.ajax({
+                                    type: "post",
+                                    url: "index.html",
+                                    async: true,
+                                    data: {
+                                        'name': name,
+                                        'sex': sex,
+                                        'age': age,
+                                        'degree': degree,
+                                        'phone': phone,
+                                        'edu': edu,
+                                        'job': job,
+                                        'class_id': class_id
+                                    },
+                                    success: function (data) {
+                                        alert('提交成功');
+                                        window.location.reload();
+                                    }
+                                });
+                            }
+                        })
+
+                    }
+
+                );
+
+
+            })
+        </script>
+
 </body>
 
 </html>

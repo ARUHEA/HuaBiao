@@ -505,17 +505,17 @@
 	display: none;
 }
 .joinus-up strong {
-	font-size: .2rem;
+	font-size: .373333rem;
 	color: #000;
 	font-weight: bold;
 }
 .joinus-down h6 {
-	font-size: .18rem;
+	font-size: .373333rem;
 	color: #000;
 	padding: .25rem 0 .1rem;
 }
 .joinus-down p {
-	font-size: .16rem;
+	font-size: 14px;
 	color: #666;
 	line-height: .3rem;
 }
@@ -700,7 +700,7 @@
 	display: inline-block;
 	width: 90px;
 	margin-bottom: 0;
-	font-size: .16rem;
+	font-size: 16px;
 	color: #000;
 }
 

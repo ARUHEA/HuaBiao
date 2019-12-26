@@ -1,4 +1,4 @@
-﻿body{
+﻿body {
     letter-spacing: 1px;
 }
 
@@ -17,17 +17,16 @@
 }
 
 /* 图片放大效果 */
-/*当屏幕尺寸小于768px时，应用下面的CSS样式*/
 @media screen and (min-width: 541px) {
-.hover-big{
-    /* width: 100%;
+    .hover-big {
+        /* width: 100%;
     height: 100%; */
-    transition: all .6s;
-}
+        transition: all .6s;
+    }
 
-.hover-big:hover{
-    transform: scale(1.1);
-}
+    .hover-big:hover {
+        transform: scale(1.1);
+    }
 
 }
 
@@ -150,6 +149,7 @@
 .foot_main1-up h5 {
     margin-right: 126px;
     font-size: 14px;
+    color: white;
 }
 
 /* 下部分 */
@@ -165,8 +165,14 @@
 
 .foot_main1-down li a {
     color: #ababab;
-    padding: 2px;
-    font-size: 12px;
+    padding-left: 4px;
+}
+@media screen and (min-width: 541px) {
+    .foot_main1-down li a {
+        color: #ababab;
+        padding: 4px;
+        font-size: 12px;
+    }
 }
 
 /* 尾部第二部分 */
@@ -183,11 +189,12 @@
 .foot .about-us a {
     font-size: 14px;
     line-height: 28px;
-    color: #ababab;
+    color: white;
 }
 
 .foot .about-us li:first-child {
     font-size: 18px;
+    color: white;
 }
 
 /* 尾部第三部分 */
@@ -203,13 +210,13 @@
 
 .foot .relation a {
     line-height: 28px;
-    color: #ababab;
+    color: white;
     font-size: 14px;
 }
 
 
-.foot .relation li:first-child{
-    color: #ababab;
+.foot .relation li:first-child {
+    color: white;
     font-size: 18px;
 }
 
@@ -236,6 +243,7 @@
 .foot .weixin1 p,
 .foot .weixin2 p {
     line-height: 28px;
+    color: white;
 }
 
 .foot-fo {
@@ -253,20 +261,40 @@
 }
 
 
-
-/*当屏幕尺寸小于768px时，应用下面的CSS样式*/
-@media screen and (max-width: 540px) {
-
-    .container{
-        width: 10rem;
+@media screen and (min-width: 541px) {
+    .fa {
+        max-width: 1920px;
+        min-width: 1920px;
     }
-    .foot {
-        max-width: 10rem;
-        min-width: 10rem;
+    .foot-fo span {
+        padding-left: 6px;
     }
+    
 
 }
 
 
 
 
+/*当屏幕尺寸小于540px时，应用下面的CSS样式*/
+@media screen and (max-width: 540px) {
+
+    .container {
+        width: 10rem;
+    }
+
+    .foot {
+        max-width: 10rem;
+        min-width: 10rem;
+    }
+
+    #menu {
+        background: url(../img/menu.png);
+        background-size: contain;
+        
+    }
+
+
+
+
+}
